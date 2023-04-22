@@ -4,6 +4,6 @@
 
 ## 📚 공부기록
 
-[1.  배열(Array)](https://github.com/DongWooKim97/Algorithm_Training/tree/main/src/main/java/datastructure/array)
+[1.  배열(Array)](https://github.com/DongWooKim97/My_Algorithm_Training/tree/main/src/main/java/com/ll/array)
 
-[2.  연결리스트(LinkedList)](https://github.com/DongWooKim97/Algorithm_Training/tree/main/src/main/java/datastructure/linkedlist)
+[2.  연결리스트(LinkedList)](https://github.com/DongWooKim97/My_Algorithm_Training/tree/main/src/main/java/com/ll/linkedlist)
