@@ -1,5 +1,6 @@
 package com.ll.arraylist;
 
+import com.ll.TestUt;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -42,23 +43,20 @@ public class MyArrayListTest {
     void t4() {
         MyArrayList<String> list = new MyArrayList<>();
 
+        String[] data = TestUt.getFieldValue(list, "data", null);
+        assertThat(data.length).isEqualTo(2);
+
         list.add("사과");
         list.add("포도");
+
+        data = TestUt.getFieldValue(list, "data", null);
+        assertThat(data.length).isEqualTo(2);
+
         list.add("당근");
+
+        data = TestUt.getFieldValue(list, "data", null);
+        assertThat(data.length).isEqualTo(4);
 
         assertThat(list.size()).isEqualTo(3);
     }
-
-    @Test
-    @DisplayName("배열 크기를 한계에 계속 늘림")
-    void t5() {
-        MyArrayList<String> list = new MyArrayList<>();
-
-        for (int i = 0; i < 100; i++) {
-            list.add(String.valueOf(i));
-        }
-
-        assertThat(list.size()).isEqualTo(100);
-    }
-
 }
